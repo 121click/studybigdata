@@ -70,7 +70,7 @@ def getTourismStatsService(nat_cd, ed_cd, nStartYear, nEndYear):
                 print(json.dumps(jsonData, indent=4, sort_keys=True, ensure_ascii=False))
                 natName = jsonData['response']['body']['items']['item']['natKorNm']
                 natName = natName.replace(' ', '')
-                num = jsonData['response']['body']['items']['item']['item']
+                num = jsonData['response']['body']['items']['item']['num']
                 ed = jsonData['response']['body']['items']['item']['ed']
 
                 jsonResult.append({'nat_name':natName, 'nat_cd': nat_cd, 'yyyymm': yyyymm, 'visit_cnt': num})
@@ -87,7 +87,7 @@ def main():
     ed = ''
     dataEND = ''
 
-    print('<<국내 입국한 외국인 통계데티어 수집>>')
+    print('<<국내 입국한 외국인 통계데이터 수집>>')
 
     nat_cd = input('국가코드를 입력하세요:  (CH 112 JP 130 USA 140 ph 155)')
     nStartYear = int(input('시작년도를 입력하세요: '))
@@ -101,8 +101,24 @@ def main():
         print('데이터가 없습니다. 공공데이터 포털을 확인해주세요.')
         return
     else:
-        pass
-    
+        #save file as csv
+        columns = ['입국국가', '국가코드', '입국연월', '입국자수']
+        result_df = pd.DataFrame(result, columns=columns)
+        result_df.to_csv(f'./{natName}_{ed}_{nStartYear}_{dataEND}.csv', encoding='utf8', index=False)
+
+        print('csv file saved.')
+        
+
+
+
+
+
+        # df = pd.DataFrame(result, columns=['nat_name', 'nat_cd', 'yyyymm', 'visit_cnt'])
+        # df.to_csv(f'{natName}_{ed}_{dataEND}.csv', encoding='utf-8', mode='w', index=True)
+        # print(f'{natName}_{ed}_{dataEND}.csv 파일로 저장되었습니다.')
+
+
+
 
 if __name__ =='__main__':
     main()

@@ -14,12 +14,17 @@
 ##D2
 - Web Crawling
   - Public Data API
-  - Library Package Usage
+    - csv 처리
+    - db 처리
+
+##D3
+- 웹 크롤링
+  - BS4
+  - Selenium
 
 - Bigdata Analysis
   - Statistic Analysis
 
-##D3
 
 ##D4
 
