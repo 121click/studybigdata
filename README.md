@@ -9,9 +9,15 @@
 - web crawling
   - NAVER API
   - Public Data API
-  - Libary Package Usage
+  
 
 ##D2
+- Web Crawling
+  - Public Data API
+  - Library Package Usage
+
+- Bigdata Analysis
+  - Statistic Analysis
 
 ##D3
 
