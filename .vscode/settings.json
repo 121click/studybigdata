@@ -1,5 +1,8 @@
 {
     "cSpell.words": [
-        "pymysql"
+        "matplotlib",
+        "pymysql",
+        "pyplot",
+        "seaborn"
     ]
 }
