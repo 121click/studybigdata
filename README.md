@@ -22,11 +22,13 @@
   - BS4
   - Selenium
 
-- Bigdata Analysis
-  - Statistic Analysis
-
 
 ##D4
+- Bigdata Analysis
+  - Statistical Analysis
+  - Correlation analysis
+  - Machine Learning
+
 
 ##D5
 

@@ -1,8 +1,12 @@
 {
     "cSpell.words": [
+        "countplot",
+        "distplot",
         "matplotlib",
         "pymysql",
         "pyplot",
-        "seaborn"
+        "scipy",
+        "seaborn",
+        "statsmodels"
     ]
 }
