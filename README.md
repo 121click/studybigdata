@@ -35,6 +35,11 @@
   - Correlation analysis
   - Text Component Analysis
 
+
 ##D6
 - Bigdata Analysis
   - Geospatial Analysis
+
+
+##D7
+- 
