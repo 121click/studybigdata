@@ -41,5 +41,9 @@
   - Geospatial Analysis
 
 
-##D7
-- 
+##D7 - PyQt 1
+- pyQt5 학습
+  - pyQt5, Designer 설치
+  - pyQt5 기본 폼 구조
+  - pyQt5 기본 위젯
+  - pyQt5 기본 이벤트
