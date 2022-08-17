@@ -1,3 +1,4 @@
+from PyQt5 import uic
 from PyQt5.QtWidgets import *
 from PyQt5.QtGui import *
 from PyQt5.QtCore import *
@@ -5,29 +6,23 @@ import sys
 
 
 #클래스 OOP
-class qtemplate(QWidget):
+class qtemplate(QDialog):
     #생성자
     def __init__(self) -> None:
         super().__init__()
+        uic.loadUi('./pyqt02/basic01.ui', self)
+        
         self.initUI()
 
     def initUI(self) -> None:
         self.addControls()
-        self.setGeometry(300, 100, 640, 480) # ax ay w h
-        self.setWindowTitle('QpushButton')
-        
         self.show()
 
     def addControls(self) -> None: #return None 임
-        self.label = QLabel('QpushButton', self)
-        self.label.setGeometry(10, 10, 600, 40)
-        btn1 = QPushButton('Click addcontrol', self)
-        btn1.setGeometry(520, 440, 120, 40) # ax ay aw ah
+        # self.label = QLabel('QpushButton', self)
+        # self.label.setGeometry(40, 10, 600, 40)
+        pass
 
-        self.btn1 = QPushButton('Click', self)
-        self.btn1.setGeometry(10, 440, 120, 40) # ax ay aw ah
-        self.btn1.clicked.connect(self.btn1_clicked)
-        # self.btn1.clicked.connect(self.btn1_clicked) # when clicked, connect this method, attach signal
     
     # event = signal (python)
     def btn1_clicked(self):
