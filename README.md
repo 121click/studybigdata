@@ -47,3 +47,8 @@
   - pyQt5 기본 폼 구조
   - pyQt5 기본 위젯
   - pyQt5 기본 이벤트
+
+##D7 - PyQt 2
+- pyQt5 학습
+  - QtDesigner로 UI 생성
+  - Naver API로 NEWS, 영화 불러오기
