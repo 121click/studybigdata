@@ -52,3 +52,8 @@
 - pyQt5 학습
   - QtDesigner로 UI 생성
   - Naver API로 NEWS, 영화 불러오기
+
+
+
+
+![navernewsapi](https://raw.githubusercontent.com/121click/studybigdata/main/pyqt03/image/navernews_crawling.png)
